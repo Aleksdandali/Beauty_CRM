@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "https://hotglyzmwkowxxlnhros.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhvdGdseXptd2tvd3h4bG5ocm9zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzAwMzMwNjEsImV4cCI6MjA4NTYwOTA2MX0.zPLi_tIpYu1XRNcm2QYTA4p0jsHmYP-iGDch35B5iok"
+  }
+}

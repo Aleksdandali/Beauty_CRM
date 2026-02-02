@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Получить API Ключ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #0f0f0f;
+            color: #fff;
+        }
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+        h1 {
+            color: #00ff88;
+            font-size: 32px;
+        }
+        .step {
+            background: #252525;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #00ff88;
+        }
+        .step h3 {
+            color: #00ff88;
+            margin-top: 0;
+        }
+        button {
+            background: #00ff88;
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background: #00dd77;
+        }
+        code {
+            background: #000;
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: #00ff88;
+            font-family: monospace;
+        }
+        .key-box {
+            background: #000;
+            border: 2px solid #00ff88;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            word-break: break-all;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .instruction {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🔑 Получить API Ключ из Supabase</h1>
+        
+        <div class="step">
+            <h3>Шаг 1: Открой страницу настроек</h3>
+            <p class="instruction">Нажми на кнопку ниже - откроется нужная страница в Supabase:</p>
+            <button onclick="window.open('https://supabase.com/dashboard/project/hotglyzmwkowxxlnhros/settings/api', '_blank')">
+                🚀 Открыть Supabase API Settings
+            </button>
+        </div>
+
+        <div class="step">
+            <h3>Шаг 2: Прокрути вниз</h3>
+            <p class="instruction">На открывшейся странице <strong>прокрути вниз</strong> до секции <code>Project API keys</code></p>
+        </div>
+
+        <div class="step">
+            <h3>Шаг 3: Найди ключ</h3>
+            <p class="instruction">Там будет таблица с ключами:</p>
+            <ul>
+                <li><strong>anon</strong> public - ВОТ ЭТОТ! ✅</li>
+                <li>service_role - НЕ этот! ❌</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>Шаг 4: Скопируй ключ</h3>
+            <p class="instruction">Нажми на иконку 📋 (копировать) рядом с <code>anon public</code> ключом.</p>
+            <p class="instruction">Ключ начинается с <code>eyJhbGc...</code> и очень длинный.</p>
+        </div>
+
+        <div class="step">
+            <h3>Шаг 5: Вставь в терминал</h3>
+            <p class="instruction">Вернись в терминал и выполни команду:</p>
+            <div class="key-box">
+echo 'NEXT_PUBLIC_SUPABASE_URL=https://hotglyzmwkowxxlnhros.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=ВСТАВЬ_СЮДА_КЛЮЧ' > /Users/oleksandr/beauty-crm/.env.local
+            </div>
+            <p class="instruction">Замени <code>ВСТАВЬ_СЮДА_КЛЮЧ</code> на скопированный ключ!</p>
+        </div>
+
+        <div class="step">
+            <h3>✅ Готово!</h3>
+            <p class="instruction">После этого просто дай мне знать - я перезапущу сервер!</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>💡 Или проще:</h2>
+        <p class="instruction">Просто <strong>скопируй anon ключ</strong> и <strong>вставь сюда в чат</strong> - я сам всё настрою! 🚀</p>
+    </div>
+</body>
+</html>
