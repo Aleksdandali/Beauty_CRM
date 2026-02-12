@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine Banner PRO - Preview</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <script type="text/babel">
+    // Скопіюйте сюди код з ValentineBannerPro.tsx
+    // та замініть export default на просто рендер:
+    
+    // Приклад:
+    // ReactDOM.render(<ValentineBannerPro />, document.getElementById('root'));
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #F8F0EB 0%, #E8E0DB 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #root {
+      width: 100%;
+      max-width: 1400px;
+      padding: 20px;
+    }
+
+    /* Info panel */
+    .info-panel {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.1);
+      max-width: 300px;
+      font-family: 'Inter', sans-serif;
+      z-index: 10000;
+    }
+
+    .info-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #E8194D;
+      margin-bottom: 12px;
+    }
+
+    .info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .info-item {
+      font-size: 13px;
+      color: #666;
+      margin: 8px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .info-item::before {
+      content: '✨';
+      position: absolute;
+      left: 0;
+    }
+
+    .github-link {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 16px;
+      background: #0A0A0F;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      transition: transform .2s;
+    }
+
+    .github-link:hover {
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .info-panel {
+        position: static;
+        margin: 20px;
+        max-width: none;
+      }
+    }
+  </style>
+
+  <div class="info-panel">
+    <div class="info-title">Valentine Banner PRO</div>
+    <ul class="info-list">
+      <li class="info-item">3D Parallax ефекти</li>
+      <li class="info-item">25 анімованих частинок</li>
+      <li class="info-item">Countdown таймер</li>
+      <li class="info-item">3D Carousel продуктів</li>
+      <li class="info-item">Glassmorphism дизайн</li>
+      <li class="info-item">20+ мікроанімацій</li>
+    </ul>
+    <a href="https://github.com/Aleksdandali/Beauty_CRM" class="github-link" target="_blank">
+      GitHub →
+    </a>
+  </div>
+
+  <div style="position: fixed; bottom: 20px; left: 20px; background: rgba(255,255,255,.95); backdrop-filter: blur(12px); padding: 12px 20px; border-radius: 12px; font-family: 'Inter', sans-serif; font-size: 12px; color: #666; box-shadow: 0 4px 16px rgba(0,0,0,.08);">
+    <strong style="color: #E8194D;">💡 Порада:</strong> Рухайте мишкою для 3D ефекту
+  </div>
+</body>
+</html>
